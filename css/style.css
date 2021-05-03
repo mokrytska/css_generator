@@ -22,6 +22,9 @@ body {
     text-align: center;
     font-size: 40px;
 }
+.header_wrapper {
+    position: relative;
+}
 .header {
     display: flex;
     align-items: center;
@@ -31,6 +34,7 @@ body {
     font-size: 20px;
     color: #fff;
     cursor: pointer;
+
 }
 
 .header__opener {
@@ -40,6 +44,10 @@ body {
 .tiles {
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 100%;
 }
 
 .tiles__item {
@@ -57,6 +65,7 @@ body {
     position: relative;
     transition: 0.5s;
     opacity: 0;
+    cursor: pointer;
 }
 
 .tiles--opened .tiles__item  {
@@ -172,4 +181,20 @@ body {
 }
 .tiles--opened .tiles__item:nth-child(14) {
     top: 0px;
+}
+.generator {
+    position: relative;
+    z-index: 1;
+}
+.generator__item {
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+}
+.generator__styles {
+    background: #eee;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    border: 1px solid #ddd;
+    padding: 20px;
 }
