@@ -192,6 +192,9 @@ body {
     padding: 20px;
     background-color: #fff;
     display: none;
+    color: gray;
+    margin-top: 20px;
+    padding-top: 9px;
 }
 .generator__styles {
     background: #eee;
@@ -202,7 +205,7 @@ body {
 }
 .generator__input {
     
-    width: 50px;
+    width: 70px;
     height: 30px;
     padding-left: 3px;
     margin: 5px 0 0 0;
@@ -219,14 +222,17 @@ body {
     height: 1px;
 }
 
-.generator__item {
-    color: gray;
-    margin-top: 20px;
-    padding-top: 9px;
+.generator__item--label_distance {
+   width: 200px;
+  
 }
 
-.generator__item--label_distance {
-   width: 100%;
-   max-width: 100px;
-margin-right: 70px;
+/* text into columns */
+.textcols {
+    /* margin-top: 20px;
+	column-width: 48%;
+	column-count: 2;
+	column-gap: 4%;
+	background: #fff2e1; */
 }
+
