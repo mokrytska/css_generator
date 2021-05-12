@@ -39,42 +39,97 @@
             <!-- tile border radius -->
             <div class="generator__item generator__item--bdrs">
                 <div>
-                    <label for="" class="generator__item--label_distance">Top Left:</label>
+                    <label for="" class="generator__label">Top Left:</label>
                     <input type="number" min="0" value="0" class="generator__input generator__input--top-left ">
                 </div>
                 <!-- <hr class="hr_line_bdrs"> -->
                 <hr class="hr_line_bdrs">
 
                 <div>
-                    <label for="">Top Right:</label>
+                    <label for="" class="generator__label">Top Right:</label>
                     <input type="number" min="0" value="0" class="generator__input generator__input--top-right">
                 </div>
                 <div>
-                    <label for="">Bottom Right:</label>
+                    <label for="" class="generator__label">Bottom Right:</label>
                     <input type="number" min="0" value="0" class="generator__input generator__input--bottom-right">
                 </div>
                 <div>
-                    <label for="">Bottom Left:</label>
+                    <label for="" class="generator__label">Bottom Left:</label>
                     <input type="number" min="0" value="0" class="generator__input generator__input--bottom-left">
                 </div>
 
                 <div class="generator__styles"></div>
 
             </div>
+
+            
             <!-- tile box shadow -->
-            <div class="generator__item">2</div>
+            <div class="generator__item">
+                    
+                    <div>
+                        <label for="" class="generator__label">Insert:</label>
+                        <select id="options" size="1"class="generator__input ">
+                                    <option value="Insert">Insert</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                    </div>
+                    <div>
+                        <label for="" class="generator__label">Horisontal Length:</label>
+                        <input type="number" min="0" value="0" class="generator__input ">
+                    </div>
+                    <div>
+                        <label for="" class="generator__label">Vertical Length:</label>
+                        <input type="number" min="0" value="0" class="generator__input ">
+                    </div>
+                    <div>
+                        <label for="" class="generator__label"> Blur Radius:</label>
+                    <input type="number" min="0" value="0" class="generator__input ">
+                    </div>
+                    <div>
+                        <label for="" class="generator__label">Spread:</label>
+                        <input type="number" min="0" value="0" class="generator__input ">
+                    </div>
+                    <div>
+                        <label for="" class="generator__label">Color Type:</label>
+                        <select id="options" size="1"class="generator__input ">
+                            <option value="Hex Color">Hex</option>
+                            <option value="RGBA">RGBA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="" class="generator__label">Hex Color:</label>
+                        <input type="number" min="0" value="0" class="generator__input generator__input--bottom-right">
+                    </div>
+                    <div>
+                        <label for="" class="generator__label">RGBA:</label>
+                        (<input type="number" min="0" value="0" class="generator__input generator__input--bottom-right">;                        <input type="number" min="0" value="0" class="generator__input generator__input--bottom-right">
+;                        <input type="number" min="0" value="0" class="generator__input generator__input--bottom-right">
+;                        <input type="number" min="0" value="0" class="generator__input generator__input--bottom-right">
+
+                        )
+                        
+                    </div>
+                    
+                </div>
+
+
+            
+            
             <div class="generator__item">3</div>
             <div class="generator__item">4</div>
             <div class="generator__item">5</div>
+            
+            
             <!-- multiple columns -->
             <div class="generator__item  generator__item--multcolunms">
                 <div>
-                    <label for="" class="generator__item--label_distance"># of Columns:</label>
+                    <label for="" class="generator__label"># of Columns:</label>
                     <input type="number" class="generator__input generator__input--numcolumns">
 
                 </div>
                 <div>
-                    <label class="generator__item--label_distance" for="">Column Gap:</label>
+                    <label class="generator__label" for="">Column Gap:</label>
                     <input type="number" class="generator__input generator__input--gap">
                     <label for="">px.</label>
 
@@ -92,6 +147,7 @@
 
         </div>
     </div>
+    <script src="/js/box_shadow.js"></script>
     <script src="/js/columns.js"></script>
     <script src="/js/border_radius.js"></script>
     <script src="/js/script.js"></script>

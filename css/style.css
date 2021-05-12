@@ -66,6 +66,7 @@ body {
     transition: 0.5s;
     opacity: 0;
     cursor: pointer;
+    z-index: 2;
 }
 
 .tiles--opened .tiles__item  {
@@ -187,6 +188,7 @@ body {
 .generator {
     position: relative;
     z-index: 1;
+    
 }
 .generator__item {
     padding: 20px;
@@ -205,7 +207,7 @@ body {
 }
 .generator__input {
     
-    width: 70px;
+    width: 80px;
     height: 30px;
     padding-left: 3px;
     margin: 5px 0 0 0;
@@ -222,17 +224,11 @@ body {
     height: 1px;
 }
 
-.generator__item--label_distance {
-   width: 200px;
-  
+.generator__label {
+   display: inline-block;
+   width: 150px;
 }
 
-/* text into columns */
-.textcols {
-    /* margin-top: 20px;
-	column-width: 48%;
-	column-count: 2;
-	column-gap: 4%;
-	background: #fff2e1; */
-}
+
+
 

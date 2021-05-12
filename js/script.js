@@ -24,5 +24,9 @@ for (let i = 0; i < tilesList.length; i++) {
 }
 
 initBorderRadius ();
-initMultipleColumns () 
+
+
+
+
+initMultipleColumns () ;
 
