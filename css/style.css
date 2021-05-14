@@ -187,7 +187,7 @@ body {
 
 .generator {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     
 }
 .generator__item {
@@ -229,6 +229,8 @@ body {
    width: 150px;
 }
 
-
+.generator__item--boxshadow .RGBA {
+    display: none;
+}
 
 
