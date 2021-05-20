@@ -26,11 +26,12 @@ for (let i = 0; i < tilesList.length; i++) {
     })
 }
 
-initBorderRadius ();
+initBorderRadius();
 initBoxShadow();
+initTextShadow();
 
 
 
 
-initMultipleColumns () ;
+initMultipleColumns() ;
 

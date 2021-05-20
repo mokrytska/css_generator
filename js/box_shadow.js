@@ -16,6 +16,7 @@ function initBoxShadow() {
     let inputA = document.querySelector('.generator__input--A');
 
     let isHEXShown = true;
+    let textCopy = document.querySelector('.generator__item--boxshadow .generator__styles');
 
     inputInset.addEventListener('input', setStyle)
     InputHorLength.addEventListener('input', setStyle)
@@ -28,7 +29,7 @@ function initBoxShadow() {
     inputB.addEventListener('input', setStyle)
     inputA.addEventListener('input', setStyle)
 
-    colorSelector.addEventListener('input', function() {
+    colorSelector.addEventListener('input', function () {
         const value = colorSelector.value;
 
         if (value === 'HexColor') {
@@ -66,7 +67,12 @@ function initBoxShadow() {
         `
 
         console.log(stylesString)
-        
+
     }
 
+    function generateStyles() {
+        textCopy.innerHTML = InputHorLength.value ;
+    }
+
+    generateStyles();
 }

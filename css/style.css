@@ -233,4 +233,19 @@ body {
     display: none;
 }
 
+.generator__item--textshadow .generated-text {
+    width: 150px;
+    height: 100px;
+    border-radius: 2px ;
+    border: 1px solid black;
+    background: aquamarine;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    
+}
+
 

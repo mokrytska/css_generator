@@ -2,7 +2,7 @@ function initMultipleColumns () {
     let numColumns = document.querySelector('.generator__input--numcolumns');
     let gaps = document.querySelector('.generator__input--gap');
     let textcols = document.querySelector('.textcols');
-    let textCopy = document.querySelector('.generator__styles6')
+    let textCopy = document.querySelector('.generator__item--multcolunms .generator__styles')
 
     numColumns.addEventListener('input', function () {
         textcols.style.columnCount = numColumns.value; 
