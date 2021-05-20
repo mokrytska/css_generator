@@ -70,9 +70,5 @@ function initBoxShadow() {
 
     }
 
-    function generateStyles() {
-        textCopy.innerHTML = InputHorLength.value ;
-    }
-
-    generateStyles();
+    
 }

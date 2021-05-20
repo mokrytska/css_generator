@@ -7,15 +7,21 @@ function initTextShadow() {
     let inputHex = document.querySelector('.generator__item--textshadow .generator__input--Hex');
     let exampleText = document.querySelector('.generator__item--textshadow .generated-text');
     
-    inputHorLength.addEventListener('input', function() {
+    inputHorLength.addEventListener('input',setstyle);
+    inputVertLength.addEventListener('input',setstyle);
+    inputBlurRadius.addEventListener('input',setstyle);
+    inputHex.addEventListener('input',setstyle);
+    
+    
+    
+    
+    function setstyle () {
         let styleValue = `
             ${inputHorLength.value}px
             ${inputVertLength.value}px
             ${inputBlurRadius.value}px
             ${inputHex.value} 
         `;
-        
-        exampleText.style.textShadow = styleValue;
-        
-    })
+        exampleText.style.textShadow = styleValue;   
+    }
 }
