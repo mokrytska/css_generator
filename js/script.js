@@ -29,6 +29,7 @@ for (let i = 0; i < tilesList.length; i++) {
 initBorderRadius();
 initBoxShadow();
 initTextShadow();
+initRGBA();
 
 
 

@@ -1,0 +1,25 @@
+function initRGBA() {
+    let inputR = document.querySelector('.generator__item--RGBA .generator__input--R');
+    let inputG = document.querySelector('.generator__item--RGBA .generator__input--G');
+    let inputB = document.querySelector('.generator__item--RGBA .generator__input--B');
+    let inputOpacity = document.querySelector('.generator__item--RGBA .generator__input--Opacity'); 
+    let exampleBlock = document.querySelector('.generator__item--RGBA .generated-text');
+
+    inputR.addEventListener('input',setstyle);
+    inputG.addEventListener('input',setstyle);
+    inputB.addEventListener('input',setstyle);
+    inputOpacity.addEventListener('input',setstyle);
+    
+    function setstyle() {
+        let stylesValue = `color(
+        ${inputR.value}px
+        ${inputG.value}px
+        ${inputB.value}px
+        ${inputOpacity.value}px)
+        `
+      exampleBlock.style.backgroundColor = stylesValue; 
+
+        
+    }
+
+}
