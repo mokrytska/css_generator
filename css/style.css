@@ -226,14 +226,14 @@ body {
 
 .generator__label {
    display: inline-block;
-   width: 150px;
+   width: 130px;
 }
 
 .generator__item--boxshadow .RGBA {
     display: none;
 }
 
-.generated-text {
+.generated-block {
     width: 150px;
     height: 100px;
     border-radius: 2px ;
@@ -243,9 +243,13 @@ body {
     text-align: center;
     padding-top: 10px;
     position: absolute;
-    left: 400px;
+    left: 500px;
     top: 20px;
     
+    
+    
 }
+
+
 
 

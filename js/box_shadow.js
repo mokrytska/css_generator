@@ -17,6 +17,7 @@ function initBoxShadow() {
 
     let isHEXShown = true;
     let textCopy = document.querySelector('.generator__item--boxshadow .generator__styles');
+    let color = '';
 
     inputInset.addEventListener('input', setStyle)
     InputHorLength.addEventListener('input', setStyle)
@@ -44,7 +45,6 @@ function initBoxShadow() {
     });
 
     function setStyle() {
-        let color = '';
 
         if (isHEXShown) {
             color = InputHex.value;
@@ -65,10 +65,20 @@ function initBoxShadow() {
         let stylesString = `
             box-shadow: ${styleValue};
         `
-
-        console.log(stylesString)
-
+        generateStyles();
     }
+    function generateStyles () {
+        textCopy.innerHTML = `
+        text-shadow:
+        ${inputInset.value}
+            ${InputHorLength.value}px 
+            ${InputVertLength.value}px
+            ${InputBlurRadius.value}px
+            ${InputSpread.value}px 
+            ${color}
+    `;
+    }
+    generateStyles ();
 
     
 }

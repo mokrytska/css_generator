@@ -137,7 +137,7 @@
                     <div class="generator__styles"></div>
                 </div>
 
-                <div class="generated-text">
+                <div class="generated-block">
                     Hello world!
                 </div>
 
@@ -147,23 +147,23 @@
             <div class="generator__item generator__item--RGBA">
                 <div>
                     <label for="" class="generator__label">R:</label>
-                    <input type="number" min="0" value="0" class="generator__input generator__input--R">
+                    <input type="number" min="0" max="255" value="0" class="generator__input generator__input--R">
                 </div>
                 <div>
                     <label for="" class="generator__label">B:</label>
-                    <input type="number" min="0" value="0" class="generator__input generator__input--G">
+                    <input type="number" min="0" max="255" value="0" class="generator__input generator__input--G">
                 </div>
                 <div>
                     <label for="" class="generator__label"> A:</label>
-                    <input type="number" min="0" value="0" class="generator__input generator__input--B">
+                    <input type="number" min="0" max="255" value="0" class="generator__input generator__input--B">
                 </div>
 
                 <div>
                     <label for="" class="generator__label">Opacity:</label>
-                    <input type="number" min="0" value="1" class="generator__input generator__input--Opacity">   
+                    <input type="number" step="0.1" min="0" max="1" value="1" class="generator__input generator__input--Opacity">   
                 </div>
                 <div class="generator__styles"></div>
-                <div class="generated-text">
+                <div class="generated-block">
                     Hello world!
                 </div>
 
@@ -171,8 +171,8 @@
 
 
 
+          
             <div class="generator__item">4</div>
-            <div class="generator__item">5</div>
 
 
             <!-- multiple columns -->
@@ -198,6 +198,40 @@
                 </div>
                 <div class="generator__styles"></div>
             </div>
+            <div class="generator__item">7</div>
+            <div class="generator__item">8</div>
+            <div class="generator__item">9</div>
+            <div class="generator__item">10</div>
+
+            <!-- Transform -->
+            <div class="generator__item generator__item--transform">
+                <div>
+                    <label for="" class="generator__label">Scale:</label>
+                    <input type="number" class="generator__input generator__input--scale">
+
+                </div>
+                <div>
+                    <label class="generator__label" for="">Rotate:</label>
+                    <input type="number" class="generator__input generator__input--rotate">
+                    <label for="">deg.</label>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Translate:</label>
+                    <input type="number" class="generator__input generator__input--translate_x">
+                    <label for="">px.</label>
+                    <input type="number" class="generator__input generator__input--translate_y">
+                    <label for="">px.</label>
+
+                </div>
+                <div>
+                    <label class="generator__label" for="">Skew:</label>
+                    <input type="number" class="generator__input generator__input--skew_x">
+                    <label for="">deg.</label>
+                    <input type="number" class="generator__input generator__input--skew_y">
+                    <label for="">deg.</label>
+                </div>
+                <div class="generated-block"> Hello world!</div>
+            </div>
 
         </div>
     </div>
@@ -206,7 +240,7 @@
     <script src="/js/text_shadow.js"></script>
     <script src="/js/RGBA.js"></script>
     <script src="/js/columns.js"></script>
-
+    <script src="/js/transform.js"></script>
     <script src="/js/script.js"></script>
 
 </body>

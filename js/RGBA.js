@@ -11,12 +11,9 @@ function initRGBA() {
     inputOpacity.addEventListener('input',setstyle);
     
     function setstyle() {
-        let stylesValue = `color(
-        ${inputR.value}px
-        ${inputG.value}px
-        ${inputB.value}px
-        ${inputOpacity.value}px)
-        `
+        let stylesValue = `rgba( ${inputR.value},${inputG.value},${inputB.value},${inputOpacity.value})`;
+       
+        
       exampleBlock.style.backgroundColor = stylesValue; 
 
         

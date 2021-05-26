@@ -35,4 +35,5 @@ initRGBA();
 
 
 initMultipleColumns() ;
+initTransform();
 

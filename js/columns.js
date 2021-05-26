@@ -27,7 +27,7 @@ function initMultipleColumns () {
             column-gap:  ${gaps.value}px<br>
     `;
     }
-    generateStyles () 
+    generateStyles();
 }
 
 

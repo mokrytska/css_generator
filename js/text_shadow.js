@@ -19,6 +19,7 @@ function initTextShadow() {
             ${inputHex.value} 
         `;
         exampleText.style.textShadow = styleValue;
+        generateStyles ();
     }
 
     function generateStyles () {
