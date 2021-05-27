@@ -3,7 +3,7 @@ function initTextShadow() {
     let inputVertLength = document.querySelector('.generator__item--textshadow .generator__input--vertical-length');
     let inputBlurRadius = document.querySelector('.generator__item--textshadow .generator__input--Blur-radius');
     let inputHex = document.querySelector('.generator__item--textshadow .generator__input--Hex');
-    let exampleText = document.querySelector('.generator__item--textshadow .generated-text');
+    let exampleText = document.querySelector('.generator__item--textshadow .generated-block');
     let textCopy = document.querySelector('.generator__item--textshadow .generator__styles');
 
     inputHorLength.addEventListener('input', setstyle);
@@ -18,6 +18,7 @@ function initTextShadow() {
             ${inputBlurRadius.value}px
             ${inputHex.value} 
         `;
+        
         exampleText.style.textShadow = styleValue;
         generateStyles ();
     }

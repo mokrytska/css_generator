@@ -22,14 +22,15 @@ function initTransform() {
 
     
 function setstyle() {
-    let styleValue = `
-    ${inputScale.value}
-    ${inputRotate.value}deg
-    ${inputTranslateX.value}px
-    ${inputTranslateY.value}px
-    ${inputSkewX.value}deg
-    ${inputSkewY.value}deg
+    let styleValue = ` 
+    scale( ${inputScale.value}) 
+    rotate(${inputRotate.value}deg)
+    translateX(${inputTranslateX.value}px)
+    translateY(${inputTranslateY.value}px)
+    skewX(${inputSkewX.value}deg)
+    skewY(${inputSkewY.value}deg)
     `
+    console.log(styleValue.value);
     exampleBlock.style.transform = styleValue;
 }
 }
