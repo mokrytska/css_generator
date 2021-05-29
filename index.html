@@ -205,29 +205,42 @@
 
             <!-- Transform -->
             <div class="generator__item generator__item--transform">
+                <input type="checkbox" class="generatot__item--checkbox">
+                <label for="">Tick to use perspective </label>
                 <div>
-                    <label for="" class="generator__label">Scale:</label>
-                    <input type="number" min="0" class="generator__input generator__input--scale">
+                    <label for="" class="generator__label">ScaleX:</label>
+                    <input type="number"  value="1" class="generator__input generator__input--scale_x">
+
+                </div>
+                <div>
+                    <label for="" class="generator__label">ScaleY:</label>
+                    <input type="number"  value="1" class="generator__input generator__input--scale_y">
 
                 </div>
                 <div>
                     <label class="generator__label" for="">Rotate:</label>
-                    <input type="number" class="generator__input generator__input--rotate">
+                    <input type="number" value="0" class="generator__input generator__input--rotate_x">
+                    <label for="">deg.</label>
+                    <input type="number" value="0" class="generator__input generator__input--rotate_y">
+                    <label for="">deg.</label>
+                    <input type="number" value="0" class="generator__input generator__input--rotate_z">
                     <label for="">deg.</label>
                 </div>
                 <div>
                     <label for="" class="generator__label">Translate:</label>
-                    <input type="number" class="generator__input generator__input--translate_x">
+                    <input type="number" value="0" class="generator__input generator__input--translate_x">
                     <label for="">px.</label>
-                    <input type="number" class="generator__input generator__input--translate_y">
+                    <input type="number" value="0" class="generator__input generator__input--translate_y">
+                    <label for="">px.</label>
+                    <input type="number" value="0" class="generator__input generator__input--translate_z">
                     <label for="">px.</label>
 
                 </div>
                 <div>
                     <label class="generator__label" for="">Skew:</label>
-                    <input type="number" class="generator__input generator__input--skew_x">
+                    <input type="number" value="0" class="generator__input generator__input--skew_x">
                     <label for="">deg.</label>
-                    <input type="number" class="generator__input generator__input--skew_y">
+                    <input type="number" value="0" class="generator__input generator__input--skew_y">
                     <label for="">deg.</label>
                 </div>
                 <div class="generated-block"> Hello world!</div>
