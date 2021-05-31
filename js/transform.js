@@ -12,7 +12,8 @@ function initTransform() {
     let exampleBlock = document.querySelector('.generator__item--transform .generated-block');
     let textCopy = document.querySelector('.generator__item--transform .generator__styles');
     let inputCheckbox = document.querySelector('.generator__item--transform .generatot__item--checkbox');
-
+    let mainBlock = document.querySelector('.generator__item--transform');
+    
 
     inputScaleX.addEventListener('input', setstyle);
     inputScaleY.addEventListener('input', setstyle);
@@ -44,11 +45,12 @@ function initTransform() {
         generateStyles();
     }
 
-    // inputCheckbox.addEventListener('changed', function () {
-    //     if (inputCheckbox.checked) {
-    //         exampleBlock.style.transform = 'perspective(400px)'
-    //     }
-    // })
+    inputCheckbox.addEventListener('changed', function () {
+        if (inputCheckbox.checked) {
+            mainBlock.style.transform = 'perspective(400px)';
+            
+        }
+    })
 
     function generateStyles() {
         textCopy.innerHTML = `
