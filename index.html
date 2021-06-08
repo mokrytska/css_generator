@@ -15,7 +15,7 @@
         <div class="header_wrapper">
             <div class="header">
                 <div class="header__label">Choose something</div>
-                <div class="header__opener">open</div>
+                <div class="header__opener"> <img class="header__opener-img" src="/iconfinder_2290854_grid_images_medium icons_small icons_thumbnails_icon_512px.png"></div>
             </div>
             <div class="tiles">
                 <div class="tiles__item test-tile">BORDER-RADUIS</div>
@@ -160,7 +160,8 @@
 
                 <div>
                     <label for="" class="generator__label">Opacity:</label>
-                    <input type="number" step="0.1" min="0" max="1" value="1" class="generator__input generator__input--Opacity">   
+                    <input type="number" step="0.1" min="0" max="1" value="1"
+                        class="generator__input generator__input--Opacity">
                 </div>
                 <div class="generator__styles"></div>
                 <div class="generated-block">
@@ -171,7 +172,7 @@
 
 
 
-          
+
             <div class="generator__item">4</div>
 
 
@@ -198,10 +199,51 @@
                 </div>
                 <div class="generator__styles"></div>
             </div>
-            <div class="generator__item">7</div>
             <div class="generator__item">8</div>
             <div class="generator__item">9</div>
-            <div class="generator__item">10</div>
+            <div class="generator__item">8</div>
+            
+
+            <!-- Transition -->
+            <div class="generator__item generator__item--transition">
+                <div>
+                    <label for="" class="generator__label">Property:</label>
+                    <select id="options" size="1" class="generator__input generator__input--property">
+                        <option value="">All</option>
+                        <option value="">Background</option>
+                        <option value="">Color</option>
+                        <option value="">Height</option>
+                        <option value="">Width</option>
+                        <option value="">Outline</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Duration:</label>
+                    <input type="number" class="generator__input generator__input--duration">
+                    <select id="options" size="1" class="generator__input generator__input--time">
+                        <option value="">Seconds</option>
+                        <option value="">Miliseconds</option>
+
+                    </select>
+
+                </div>
+                <div>
+                    <label for="" class="generator__label">Function:</label>
+                    <select id="options" size="1" class="generator__input generator__input--function">
+                        <option value="">Ease</option>
+                        <option value="">Liner</option>
+                        <option value="">Ease-In</option>
+                        <option value="">Ease-Out</option>
+                        <option value="">Ease-In-Out</option>
+                    </select>
+                </div>
+                <div class="generated-block"> Hello world!</div>
+                <div class="generator__styles"></div>
+
+
+            </div>
+
+
 
             <!-- Transform -->
             <div class="generator__item generator__item--transform">
@@ -209,12 +251,12 @@
                 <label for="">Tick to use perspective </label>
                 <div>
                     <label for="" class="generator__label">ScaleX:</label>
-                    <input type="number"  value="1" class="generator__input generator__input--scale_x">
+                    <input type="number" value="1" class="generator__input generator__input--scale_x">
 
                 </div>
                 <div>
                     <label for="" class="generator__label">ScaleY:</label>
-                    <input type="number"  value="1" class="generator__input generator__input--scale_y">
+                    <input type="number" value="1" class="generator__input generator__input--scale_y">
 
                 </div>
                 <div>
@@ -247,6 +289,9 @@
                 <div class="generator__styles"></div>
             </div>
 
+           
+            <div class="generator__item">10</div>
+
         </div>
     </div>
     <script src="/js/border_radius.js"></script>
@@ -254,6 +299,7 @@
     <script src="/js/text_shadow.js"></script>
     <script src="/js/RGBA.js"></script>
     <script src="/js/columns.js"></script>
+    <script src="/js/transition.js"></script>
     <script src="/js/transform.js"></script>
     <script src="/js/script.js"></script>
 

@@ -60,7 +60,9 @@ function initBoxShadow() {
             ${InputSpread.value}px
             ${color}
         `;
-        exampleBlock.style.boxShadow = styleValue;
+        exampleBlock.style.boxShadow 
+        
+        = styleValue;
 
         let stylesString = `
             box-shadow: ${styleValue};

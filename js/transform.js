@@ -45,10 +45,12 @@ function initTransform() {
         generateStyles();
     }
 
-    inputCheckbox.addEventListener('changed', function () {
+    inputCheckbox.addEventListener('change', function () {
         if (inputCheckbox.checked) {
-            mainBlock.style.transform = 'perspective(400px)';
-            
+            mainBlock.style.perspective = '400px';
+        }
+        else {
+            mainBlock.style.perspective = 'none';
         }
     })
 
