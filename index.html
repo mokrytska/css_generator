@@ -240,7 +240,44 @@
 
                 </div>
             </div>
-            <div class="generator__item">9</div>
+
+        <!-- Outline -->
+            <div class="generator__item generator__item--outline">
+                <div>
+                    <label for="" class="generator__label">Outline Thickness:</label>
+                    <input type="number" class="generator__input generator__input--outline">
+                    <label for="" class="generator__label">px</label>
+
+                </div>
+                <div>
+                    <label for="" class="generator__label">Outline:</label>
+                    <select id="options" size="1" class="generator__input generator__input--outline">
+                        <option value="Dotted">Dotted</option>
+                        <option value="Dashed">Dashed</option>
+                        <option value="Solid">Solid</option>
+                        <option value="Groove">Groove</option>
+                        <option value="Ridge">Ridge</option>
+                        <option value="Inset">Inset</option>
+                        <option value="Outset">Outset</option>
+                        <option value="Double">Double</option>
+                        <option value="Auto">Auto</option>
+                    </select>
+
+                </div>   
+                <div>
+                    <label for="" class="generator__label">Outline Thickness:</label>
+                    <input type="color" class="generator__input generator__input--outline">
+
+
+                </div> 
+                <div>
+                    <label for="" class="generator__label">Outline Offset:</label>
+                    <input type="color" class="generator__input generator__input--outline">
+
+                </div>
+                
+            
+            </div>
 
 
             <!-- Transition -->
@@ -328,9 +365,80 @@
                 <div class="generator__styles"></div>
             </div>
 
+            <!-- Flex box -->
+            <div class="generator__item generator__item--flex-box">
+                <div>
+                    <label for="" class="generator__label">Display Flex:</label>
+                    <select id="options" size="1" class="generator__input generator__input--display-flex">
+                        <option value="Flex">Flex</option>
+                        <option value="Inline Flex">Inline Flex</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="" class="generator__label">Flex Direction:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-direction">
+                        <option value="Row">Row</option>
+                        <option value="Row reverse">Row reverse</option>
+                        <option value="Column">Column</option>
+                        <option value="Column Reverse">Column Reverse</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Flex Wrap:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-wrap">
+                        <option value="Wrap">Wrap</option>
+                        <option value="No Wrap">No Wrap</option>
+                        <option value="Wrap Reverse">Wrap Reverse</option>
 
-            <div class="generator__item">10</div>
-            <div class="generator__item">11</div>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="" class="generator__label">Justify Content:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-justify">
+                        <option value="Flex Start">Flex Start</option>
+                        <option value="Flex End">Flex End</option>
+                        <option value="Center">Center</option>
+                        <option value="Space Between">Space Between</option>
+                        <option value="Space Around">Space Around</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Aline Items:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-aline-items">
+                        <option value="Flex Start">Flex Start</option>
+                        <option value="Flex End">Flex End</option>
+                        <option value="Center">Center</option>
+                        <option value="Baseline">Baseline</option>
+                        <option value="Stretched">Stretched</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Align Content:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-aline-items">
+                        <option value="Flex Start">Flex Start</option>
+                        <option value="Flex End">Flex End</option>
+                        <option value="Center">Center</option>
+                        <option value="Space Between">Space Between</option>
+                        <option value="Space Around">Space Around</option>
+                        <option value="Stretched">Stretched</option>
+
+                    </select>
+                    <label for="" class="generator__label-flex">(Only takes affect when there are multiple lines)</label>
+                
+
+                </div>
+
+                <div class="generator__styles"></div>
+
+
+            </div>
+            
+            <!-- Gradient -->
+            <div class="generator__item">You can find a nice <a href="https://www.colorzilla.com/gradient-editor/">gradient generator</a>  here.</div>
 
         </div>
     </div>

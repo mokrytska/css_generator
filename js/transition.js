@@ -21,14 +21,12 @@ function initTransition() {
         if (inputProperty.value === 'Outline') {
             exampleBlock.style.outline = '5px solid pink';
         }
-        if (inputProperty.value === 'All') {
-            exampleBlock.style. = '5px solid pink';
-        }
+        
 
     })
 
     inputDuration.addEventListener('input', function () {
-        exampleBlock.style.transitinDiration = inputDuration.value + 'seconds';
+        exampleBlock.style.transitionDuration = inputDuration.value + 's';
     })
 
 
