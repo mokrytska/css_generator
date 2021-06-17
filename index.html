@@ -18,7 +18,8 @@
         <div class="header_wrapper">
             <div class="header">
                 <div class="header__label">Choose something</div>
-                <div class="header__opener"> <img class="header__opener-img" src="/iconfinder_2290854_grid_images_medium icons_small icons_thumbnails_icon_512px.png"></div>
+                <div class="header__opener"> <img class="header__opener-img"
+                        src="/iconfinder_2290854_grid_images_medium icons_small icons_thumbnails_icon_512px.png"></div>
             </div>
             <div class="tiles">
                 <div class="tiles__item test-tile">BORDER-RADUIS</div>
@@ -174,9 +175,18 @@
             </div>
 
 
+            <!-- Font face -->
+            <div class="generator__item geberator__item--font_face">
+                <div>
+                    <label for="" class="generator__label">Font family:</label>
+                    <input type="number" class="generator__input generator__input--font_face">
 
-
-            <div class="generator__item">4</div>
+                </div>
+                <div>
+                    <label class="generator__label" for="">Font name:</label>
+                    <input type="number" class="generator__input generator__input--font_face">
+                </div>
+            </div>
 
 
             <!-- multiple columns -->
@@ -202,10 +212,73 @@
                 </div>
                 <div class="generator__styles"></div>
             </div>
-            <div class="generator__item">8</div>
-            <div class="generator__item">9</div>
-            <div class="generator__item">8</div>
+
+            <!-- Box resize -->
+
+
+            <div class="generator__item generator__item--box-resize">
+                <div>
+                    <label for="" class="generator__label">Box resize:</label>
+                    <select id="options" size="1" class="generator__input generator__input--box-resize">
+                        <option value="None">None</option>
+                        <option value="Horizontal">Horizontal</option>
+                        <option value="Vertical">Vertical</option>
+                        <option value="Both">Both</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <!-- Box sizing -->
+            <div class="generator__item generator__item--box-sizing">
+                <div>
+                    <label for="" class="generator__label">Box resize:</label>
+                    <select id="options" size="1" class="generator__input generator__input--box-sizing">
+                        <option value="Border box">Border box</option>
+                        <option value="Content box">Content box</option>
+                    </select>
+
+                </div>
+            </div>
+
+        <!-- Outline -->
+            <div class="generator__item generator__item--outline">
+                <div>
+                    <label for="" class="generator__label">Outline Thickness:</label>
+                    <input type="number" class="generator__input generator__input--outline">
+                    <label for="" class="generator__label">px</label>
+
+                </div>
+                <div>
+                    <label for="" class="generator__label">Outline:</label>
+                    <select id="options" size="1" class="generator__input generator__input--outline">
+                        <option value="Dotted">Dotted</option>
+                        <option value="Dashed">Dashed</option>
+                        <option value="Solid">Solid</option>
+                        <option value="Groove">Groove</option>
+                        <option value="Ridge">Ridge</option>
+                        <option value="Inset">Inset</option>
+                        <option value="Outset">Outset</option>
+                        <option value="Double">Double</option>
+                        <option value="Auto">Auto</option>
+                    </select>
+
+                </div>   
+                <div>
+                    <label for="" class="generator__label">Outline Thickness:</label>
+                    <input type="color" class="generator__input generator__input--outline">
+
+
+                </div> 
+                <div>
+                    <label for="" class="generator__label">Outline Offset:</label>
+                    <input type="color" class="generator__input generator__input--outline">
+
+                </div>
+                
             
+            </div>
+
 
             <!-- Transition -->
             <div class="generator__item generator__item--transition">
@@ -213,19 +286,19 @@
                     <label for="" class="generator__label">Property:</label>
                     <select id="options" size="1" class="generator__input generator__input--property">
                         <option value="">All</option>
-                        <option value="">Background</option>
-                        <option value="">Color</option>
-                        <option value="">Height</option>
-                        <option value="">Width</option>
-                        <option value="">Outline</option>
+                        <option value="Background">Background</option>
+                        <option value="Color">Color</option>
+                        <option value="Height">Height</option>
+                        <option value="Width">Width</option>
+                        <option value="Outline">Outline</option>
                     </select>
                 </div>
                 <div>
                     <label for="" class="generator__label">Duration:</label>
                     <input type="number" class="generator__input generator__input--duration">
                     <select id="options" size="1" class="generator__input generator__input--time">
-                        <option value="">Seconds</option>
-                        <option value="">Miliseconds</option>
+                        <option value="Seconds">Seconds</option>
+                        <option value="Miliseconds">Miliseconds</option>
 
                     </select>
 
@@ -292,8 +365,87 @@
                 <div class="generator__styles"></div>
             </div>
 
-           
-            <div class="generator__item">10</div>
+            <!-- Flex box -->
+            <div class="generator__item generator__item--flex-box">
+                <div>
+                    <label for="" class="generator__label">Display Flex:</label>
+                    <select id="options" size="1" class="generator__input generator__input--display-flex">
+                        <option value="Flex">Flex</option>
+                        <option value="Inline Flex">Inline Flex</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="" class="generator__label">Flex Direction:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-direction">
+                        <option value="Row">Row</option>
+                        <option value="Row reverse">Row reverse</option>
+                        <option value="Column">Column</option>
+                        <option value="Column Reverse">Column Reverse</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Flex Wrap:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-wrap">
+                        <option value="Wrap">Wrap</option>
+                        <option value="No Wrap">No Wrap</option>
+                        <option value="Wrap Reverse">Wrap Reverse</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="" class="generator__label">Justify Content:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-justify">
+                        <option value="Flex Start">Flex Start</option>
+                        <option value="Flex End">Flex End</option>
+                        <option value="Center">Center</option>
+                        <option value="Space Between">Space Between</option>
+                        <option value="Space Around">Space Around</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Aline Items:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-aline-items">
+                        <option value="Flex Start">Flex Start</option>
+                        <option value="Flex End">Flex End</option>
+                        <option value="Center">Center</option>
+                        <option value="Baseline">Baseline</option>
+                        <option value="Stretched">Stretched</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="generator__label">Align Content:</label>
+                    <select id="options" size="1" class="generator__input generator__input--flex-aline-items">
+                        <option value="Flex Start">Flex Start</option>
+                        <option value="Flex End">Flex End</option>
+                        <option value="Center">Center</option>
+                        <option value="Space Between">Space Between</option>
+                        <option value="Space Around">Space Around</option>
+                        <option value="Stretched">Stretched</option>
+
+                    </select>
+                    <label for="" class="generator__label-flex">(Only takes affect when there are multiple lines)</label>
+                
+
+                </div>
+
+                <div class="generated-block-main">
+                    <div class="example-1">1</div>
+                    <div class="example-2">2</div>
+                    <div class="example-3">3</div>
+                    <div class="example-4">4</div>
+                    <div class="example-5">5</div>
+                </div>
+                <div class="generator__styles"></div>
+
+
+            </div>
+            
+            <!-- Gradient -->
+            <div class="generator__item">You can find a nice <a href="https://www.colorzilla.com/gradient-editor/">gradient generator</a>  here.</div>
 
         </div>
     </div>

@@ -37,4 +37,5 @@ initRGBA();
 initMultipleColumns() ;
 initTransition();
 initTransform();
+initFlexBox();
 
