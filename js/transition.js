@@ -28,6 +28,24 @@ function initTransition() {
     inputDuration.addEventListener('input', function () {
         exampleBlock.style.transitionDuration = inputDuration.value + 's';
     })
+    inputFunction.addEventListener('input', function() {
+        if (inputFunction.value === 'Ease') {
+            exampleBlock.style.transitionTimingFunction = 'ease';
+        }
+        if (inputFunction.value === 'Liner') {
+            exampleBlock.style.transitionTimingFunction = 'linear';
+        }
+        if (inputFunction.value === 'Ease-In') {
+            exampleBlock.style.transitionTimingFunction = 'ease-in';
+        }
+        if (inputFunction.value === 'Ease-Out') {
+            exampleBlock.style.transitionTimingFunction = 'ease-out';
+        }
+        if (inputFunction.value === 'Ease-In-Out') {
+            exampleBlock.style.transitionTimingFunction = 'ease-in-out';
+        }
+        
+    })
 
 
 }
