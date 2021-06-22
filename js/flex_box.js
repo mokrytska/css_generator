@@ -1,8 +1,6 @@
 function initFlexBox() {
     let inputDisplayFlex = document.querySelector('.generator__item--flex-box .generator__input--display-flex');
-    console.log(inputDisplayFlex);
     let inputFlexDirection = document.querySelector('.generator__item--flex-box .generator__input--flex-direction');
-    console.log(inputFlexDirection);
     let inputFlexWrap = document.querySelector('.generator__item--flex-box .generator__input--flex-wrap');
     let inputFlexJustify = document.querySelector('.generator__item--flex-box .generator__input--flex-justify');
     let inputAlineItems = document.querySelector('.generator__item--flex-box .generator__input--flex-aline-items');
@@ -10,102 +8,35 @@ function initFlexBox() {
     let exampleBlock = document.querySelector('.generated-block-main');
     let textCopy = document.querySelector('.generator__item--flex-box .generator__styles');
 
-      
-    
-    inputDisplayFlex.addEventListener('input', function(){
-        if (inputDisplayFlex.value === 'Flex') {
-            exampleBlock.style.displayFlex = 'flex';
-        }
-        else {
-            exampleBlock.style.displayFlex = 'inlineFlex';
-        }
-        generateStyles();
-    })
-    inputFlexDirection.addEventListener('input', function() {
-        if (inputFlexDirection.value === 'Row') {
-            exampleBlock.style.flexDirection = 'row';
-        }
 
-        if (inputFlexDirection.value === 'Row reverse') {
-            exampleBlock.style.flexDirection = 'row-reverse';
-        }
-        if (inputFlexDirection.value === 'Column') {
-            exampleBlock.style.flexDirection = 'column';
-        }
 
-        if (inputFlexDirection.value === 'Column Reverse') {
-            exampleBlock.style.flexDirection = 'column-reverse';
-        }
+    inputDisplayFlex.addEventListener('input', function () {
+        setDisplayFlex()
         generateStyles();
     })
 
-    inputFlexWrap.addEventListener('input', function() {
-        if (inputFlexWrap.value === 'Wrap') {
-            exampleBlock.style.flexWrap = 'wrap';
-        }
-        if (inputFlexWrap.value === 'No Wrap') {
-            exampleBlock.style.flexWrap = 'nowrap';
-        }
-        if (inputFlexWrap.value === 'Wrap Reverse') {
-            exampleBlock.style.flexWrap = 'wrap-reverse';
-        }
+    inputFlexDirection.addEventListener('input', function () {
+        setDisplayFlex()
         generateStyles();
     })
 
-    inputFlexJustify.addEventListener('input', function() {
-        if (inputFlexJustify.value === 'Flex Start') {
-            exampleBlock.style.justifyContent = 'flex-start';
-        }
-        if (inputFlexJustify.value === 'Flex End') {
-            exampleBlock.style.justifyContent = 'flex-end';
-        }
-        if (inputFlexJustify.value === 'Center') {
-            exampleBlock.style.justifyContent = 'center';
-        }
-        if (inputFlexJustify.value === 'Space Between') {
-            exampleBlock.style.justifyContent = 'space-between';
-        }
-        if (inputFlexJustify.value === 'Space Around') {
-            exampleBlock.style.justifyContent = 'space-around';
-        }
+    inputFlexWrap.addEventListener('input', function () {
+        setDisplayFlex()
         generateStyles();
     })
 
-    inputAlineItems.addEventListener('input', function() {
-        if (inputAlineItems.value === 'Flex Start') {
-            exampleBlock.style.alignItems = 'flex-start';
-        }
-        if (inputAlineItems.value === 'Flex End') {
-            exampleBlock.style.alignItems = 'flex-end';
-        }
-        if (inputAlineItems.value === 'Center') {
-            exampleBlock.style.alignItems = 'center';
-        }
-        if (inputAlineItems.value === 'Baseline') {
-            exampleBlock.style.alignItems = 'baseline';
-        }
-        if (inputAlineItems.value === 'Stretch') {
-            exampleBlock.style.alignItems = 'stretch';
-        }
+    inputFlexJustify.addEventListener('input', function () {
+        setDisplayFlex()
         generateStyles();
     })
 
-    inputAlineContent.addEventListener('input', function() {
-        if (inputAlineContent.value === 'Flex Start') {
-            exampleBlock.style.alignContent = 'flex-start';
-        }
-        if (inputAlineContent.value === 'Flex End') {
-            exampleBlock.style.alignContent = 'flex-end';
-        }
-        if (inputAlineContent.value === 'Center') {
-            exampleBlock.style.alignContent = 'center';
-        }
-        if (inputAlineContent.value === 'Space Between') {
-            exampleBlock.style.alignContent = 'space-between';
-        }
-        if (inputAlineContent.value === 'Space Around') {
-            exampleBlock.style.alignContent = 'space-around';
-        }
+    inputAlineItems.addEventListener('input', function () {
+        setDisplayFlex()
+        generateStyles();
+    })
+
+    inputAlineContent.addEventListener('input', function () {
+        setDisplayFlex()
         generateStyles();
     })
 
@@ -121,7 +52,7 @@ function initFlexBox() {
     setDisplayFlex();
 
     function generateStyles() {
-    textCopy.innerHTML = `
+        textCopy.innerHTML = `
     .flexbox-container {
         display: ${inputDisplayFlex.value}; <br>
         flex-direction:${inputFlexDirection.value};<br>
@@ -131,7 +62,7 @@ function initFlexBox() {
         align-content: ${inputAlineContent.value};
       }
     `
-}
-generateStyles() ;
+    }
+    generateStyles();
 
 }
