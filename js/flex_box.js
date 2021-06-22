@@ -10,29 +10,12 @@ function initFlexBox() {
 
 
 
-    inputDisplayFlex.addEventListener('input', function () {
-        setStyles();
-    })
-
-    inputFlexDirection.addEventListener('input', function () {
-        setStyles();
-    })
-
-    inputFlexWrap.addEventListener('input', function () {
-        setStyles();
-    })
-
-    inputFlexJustify.addEventListener('input', function () {
-        setStyles();
-    })
-
-    inputAlineItems.addEventListener('input', function () {
-        setStyles();
-    })
-
-    inputAlineContent.addEventListener('input', function () {
-        setStyles();
-    })
+    inputDisplayFlex.addEventListener('input', setStyles)
+    inputFlexDirection.addEventListener('input', setStyles)
+    inputFlexWrap.addEventListener('input', setStyles)
+    inputFlexJustify.addEventListener('input', setStyles)
+    inputAlineItems.addEventListener('input', setStyles)
+    inputAlineContent.addEventListener('input', setStyles)
 
     function setDisplayFlex() {
         exampleBlock.style.display = 'flex';
