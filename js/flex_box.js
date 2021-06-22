@@ -11,33 +11,27 @@ function initFlexBox() {
 
 
     inputDisplayFlex.addEventListener('input', function () {
-        setDisplayFlex()
-        generateStyles();
+        setStyles();
     })
 
     inputFlexDirection.addEventListener('input', function () {
-        setDisplayFlex()
-        generateStyles();
+        setStyles();
     })
 
     inputFlexWrap.addEventListener('input', function () {
-        setDisplayFlex()
-        generateStyles();
+        setStyles();
     })
 
     inputFlexJustify.addEventListener('input', function () {
-        setDisplayFlex()
-        generateStyles();
+        setStyles();
     })
 
     inputAlineItems.addEventListener('input', function () {
-        setDisplayFlex()
-        generateStyles();
+        setStyles();
     })
 
     inputAlineContent.addEventListener('input', function () {
-        setDisplayFlex()
-        generateStyles();
+        setStyles();
     })
 
     function setDisplayFlex() {
@@ -49,7 +43,7 @@ function initFlexBox() {
         exampleBlock.style.alignItems = inputAlineItems.value;
         exampleBlock.style.alignContent = inputAlineContent.value;
     }
-    setDisplayFlex();
+    setStyles();
 
     function generateStyles() {
         textCopy.innerHTML = `
@@ -63,6 +57,12 @@ function initFlexBox() {
       }
     `
     }
-    generateStyles();
+    setStyles();
+
+    function setStyles() {
+        setDisplayFlex();
+        generateStyles();
+    }
+
 
 }
