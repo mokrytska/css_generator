@@ -2,6 +2,7 @@ let openButton = document.querySelector('.header');
 let tilesSection = document.querySelector('.tiles');
 let tilesList = document.querySelectorAll('.tiles__item');
 let blocksList = document.querySelectorAll('.generator__item');
+let header = document.querySelector('.header__label');
 
 openButton.addEventListener('click', function () {
     tilesSection.classList.toggle('tiles--opened');
