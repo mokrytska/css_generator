@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,14 +8,14 @@
 body {
     /* overflow: hidden; */
     background-color: rgb(243, 234, 236);
-    font-family: "Roboto", "Ital";
+    
     min-width: 100%;
     min-height: 100%;
 
 }
 
 .wrapper {
-
+    
     max-width: 690px;
     margin: auto;
     width: 100%;
@@ -30,6 +30,10 @@ body {
 
 .header_wrapper {
     position: relative;
+}
+
+.header__label {
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -54,6 +58,7 @@ body {
 }
 
 .tiles {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
