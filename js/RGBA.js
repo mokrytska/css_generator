@@ -3,7 +3,7 @@ function initRGBA() {
     let inputG = document.querySelector('.generator__item--RGBA .generator__input--G');
     let inputB = document.querySelector('.generator__item--RGBA .generator__input--B');
     let inputOpacity = document.querySelector('.generator__item--RGBA .generator__input--Opacity'); 
-    let exampleBlock = document.querySelector('.generator__item--RGBA .generated-text');
+    let exampleBlock = document.querySelector('.generator__item--RGBA .generated-block');
 
     inputR.addEventListener('input',setstyle);
     inputG.addEventListener('input',setstyle);
@@ -18,5 +18,6 @@ function initRGBA() {
 
         
     }
+   
 
 }
