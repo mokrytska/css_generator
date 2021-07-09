@@ -2,7 +2,7 @@ let openButton = document.querySelector('.header');
 let tilesSection = document.querySelector('.tiles');
 let tilesList = document.querySelectorAll('.tiles__item');
 let blocksList = document.querySelectorAll('.generator__item');
-let header = document.querySelector('.header__label');
+let nameHeader = document.querySelector('.header__label');
 
 openButton.addEventListener('click', function () {
     tilesSection.classList.toggle('tiles--opened');
@@ -18,6 +18,7 @@ for (let i = 0; i < tilesList.length; i++) {
         for (let j = 0; j < blocksList.length; j++) {
             if (j == i) {
                 blocksList[j].style.display = 'block';
+                nameHeader.innerText = tilesList[i].textContent;
             }
             else {
                 blocksList[j].style.display = 'none';
@@ -25,6 +26,7 @@ for (let i = 0; i < tilesList.length; i++) {
         }
 
     })
+    
 }
 
 initBorderRadius();
