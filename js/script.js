@@ -18,7 +18,7 @@ for (let i = 0; i < tilesList.length; i++) {
         for (let j = 0; j < blocksList.length; j++) {
             if (j == i) {
                 blocksList[j].style.display = 'block';
-                nameHeader.innerHTML = tilesList[i].textContent;
+                nameHeader.innerText = tilesList[i].textContent;
             }
             else {
                 blocksList[j].style.display = 'none';
