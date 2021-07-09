@@ -1,5 +1,5 @@
 * {
-    
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,6 +45,7 @@ body {
     font-size: 20px;
     color: #fff;
     cursor: pointer;
+    font-weight: 700;
 
 }
 
@@ -58,7 +59,7 @@ body {
 }
 
 .tiles {
-    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
